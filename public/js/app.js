@@ -1,4 +1,4 @@
-console.log("Client side javascript loaded")
+
 
 const weather_form=document.querySelector(".get_weather");
 const search_address=document.querySelector("#address");
