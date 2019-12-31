@@ -9,7 +9,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback('unable to find location!',undefined);
         }
         else{
-            callback(undefined,response.body.daily.data[0].summary +' it is currently '+response.body.currently.temperature +' degrees out. There is a '+response.body.currently.precipProbability+'% chance of rain .');
+            callback(undefined,response.body.daily.data[0].summary +' it is currently '+response.body.currently.temperature +' degrees out. There is a '+response.body.currently.precipProbability+'% chance of rain . wind speed is '+response.body.currently.windSpeed+"km/h.");
         }
     })
 };
